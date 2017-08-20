@@ -1,0 +1,353 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 21, 2016, 2:17:47 PM
+    Author     : Dhananjaya
+*/
+
+body{
+    background-color: #FFFFFF;
+}
+
+form label{
+    /*font-size: 13px;*/
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.pagebreak { page-break-before: always; }
+
+.add-estimate-item-section{
+    padding-top: 30px;
+}
+
+#delete-row{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.actions a{
+    margin-left: 10px;
+}
+
+.info-header{
+    text-align: center;
+}
+
+.estimate-total{
+    margin-top: 10px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+.text-bold:hover{
+    text-decoration: none;
+}
+
+.status-label{
+    display: block;
+    max-width: 80px;
+    font-size: 80%;
+    margin: auto;
+}
+
+.labour-time-wrapper{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 60px;
+}
+
+.print-tr{
+    background-color: #FFFFFF !important;
+}
+
+.page {
+    overflow: hidden;
+    page-break-after: always;
+}
+
+.page-header-form{
+    margin-top: 20px;
+}
+
+.estimate-print-footer{
+    margin-top: 15px;
+}
+
+.supplementary-print-title{
+    margin-bottom: 15px;
+}
+
+.custom-alert-warning{
+    margin-top: 5px;
+}
+.alert-custom{
+    padding: 2px;
+    width: 60%;
+    height: 25px;
+    text-align: center;
+}
+.form-textarea{
+    height: 80px !important;
+}
+
+.item-select{min-width: 320px;}
+.item-desc{min-width: 250px;}
+.item-qty{min-width: 80px;}
+.item-rate{min-width: 100px;}
+.item-amount{min-width: 100px;}
+.item-approved-amount{min-width: 100px;}
+
+.hide{
+    display: none;
+}
+
+.estimate-services-section{
+    background-color: rgba(0, 255, 0, 0.19);
+}
+.estimate-parts-section{
+    background-color: rgba(216, 239, 0, 0.19);
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: transparent;
+}
+
+.estimate-print-title h4{
+    font-size: 16px;
+}
+
+thead, tfoot { display: table-row-group }
+
+.delete-icon{
+    color: #ff0000;
+}
+
+/* chosen styles starts from here */
+
+select.form-control + .chosen-container.chosen-container-single .chosen-single {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    background-image:none;
+}
+
+select.form-control + .chosen-container.chosen-container-single .chosen-single div {
+    top:4px;
+    color:#000;
+}
+
+select.form-control + .chosen-container .chosen-drop {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    margin: 2px 0 0;
+
+}
+
+select.form-control + .chosen-container .chosen-search input[type=text] {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    background-image:none;
+}
+
+select.form-control + .chosen-container .chosen-results {
+    margin: 2px 0 0;
+    padding: 5px 0;
+    font-size: 14px;
+    list-style: none;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+select.form-control + .chosen-container .chosen-results li ,
+select.form-control + .chosen-container .chosen-results li.active-result {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: nowrap;
+    background-image:none;
+}
+select.form-control + .chosen-container .chosen-results li:hover,
+select.form-control + .chosen-container .chosen-results li.active-result:hover,
+select.form-control + .chosen-container .chosen-results li.highlighted
+{
+    color: #FFF;
+    text-decoration: none;
+    background-color: #428BCA;
+    background-image:none;
+}
+
+select.form-control + .chosen-container-multi .chosen-choices {
+    display: block;
+    width: 100%;
+    min-height: 34px;
+    padding: 6px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    background-image:none;
+}
+
+select.form-control + .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+    height:auto;
+    padding:5px 0;
+}
+
+select.form-control + .chosen-container-multi .chosen-choices li.search-choice {
+
+    background-image: none;
+    padding: 3px 24px 3px 5px;
+    margin: 0 6px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #333;
+    background-color: #FFF;
+    border-color: #CCC;
+}
+
+select.form-control + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    top:8px;
+    right:6px;
+}
+
+select.form-control + .chosen-container-multi.chosen-container-active .chosen-choices,
+select.form-control + .chosen-container.chosen-container-single.chosen-container-active .chosen-single,
+select.form-control + .chosen-container .chosen-search input[type=text]:focus{
+    border-color: #66AFE9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+select.form-control + .chosen-container-multi .chosen-results li.result-selected{
+    display: list-item;
+    color: #ccc;
+    cursor: default;
+    background-color: white;
+}
+
+/* chosen styles ends */
+
+.panel-print{
+    border: 0;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+@media print {
+    table.dataTable thead .sorting_asc:after{display: none;}
+    #dataTables-function_length{display: none;}
+    #dataTables-function_filter{display: none;}
+    .panel-heading{display: none;}
+}
+
+.dashboard-header-item{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.dashboard-job-panel ul{
+    list-style-type: none;
+    display: table;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.dashboard-job-panel ul li{
+    display: table-cell;
+    text-align: center;
+    font-size: 18px;
+}
+
+.dashboard-job-panel ul li span{
+    display: block;
+    font-size: 22px;
+}
+
+.dashboard-job-panel ul li.info{color: #5bc0de;}
+.dashboard-job-panel ul li.success{color: #449d44;}
+.dashboard-job-panel ul li.primary{color: #337ab7;}
+.dashboard-job-panel ul li.warning{color: #f0ad4e;}
+.dashboard-job-panel ul li.default{color: #777;}
+
+.disabled-row{
+    color: #c1c1c1;
+}
+
+.disabled-row a{
+    color: #c1c1c1;
+}
+
